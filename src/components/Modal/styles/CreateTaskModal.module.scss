@@ -1,0 +1,68 @@
+.modal_container {
+  background-color: #673bb7;
+  color: #f0f0f0;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1rem;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  h1 {
+    margin-bottom: 2rem;
+  }
+  label {
+    margin-bottom: 0.5rem;
+  }
+  textarea {
+    resize: vertical;
+  }
+  input,
+  textarea {
+    color: #f0f0f0;
+    background-color: transparent;
+    border: none;
+    padding: 1rem 1rem;
+    border-radius: 50px;
+    margin-bottom: 1rem;
+    font-size: 1.125rem;
+    outline: none;
+    border: 2px solid #4c00a9;
+    width: 100%;
+    transition: 0.2s;
+    &::placeholder {
+      color: #aaa;
+    }
+    &:hover,
+    &:focus {
+      border: 2px solid #f0f0f0;
+    }
+  }
+  button {
+    background-color: #f0f0f0;
+    border: none;
+    padding: 1rem;
+    border-radius: 50px;
+    color: #4c00a9;
+    font-size: 1.125rem;
+    transition: 0.2s;
+    cursor: pointer;
+    margin-top: 1rem;
+    width: 100%;
+    &.close_button {
+      background-color: #4c00a9;
+      color: #f0f0f0;
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      top: -40px;
+      right: -20px;
+    }
+    &:hover {
+      filter: brightness(0.8);
+    }
+  }
+}

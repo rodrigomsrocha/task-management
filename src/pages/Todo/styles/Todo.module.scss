@@ -1,0 +1,48 @@
+.todo_container {
+  background-color: #673bb7;
+  color: #f0f0f0;
+  padding: 2rem 1rem;
+  border-radius: 20px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  .todo_header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    .buttons {
+      display: flex;
+      gap: 0.5rem;
+      button {
+        border: none;
+        background-color: #4c00c9;
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #f0f0f0;
+        width: 48px;
+        height: 48px;
+        text-align: center;
+        border-radius: 50%;
+        cursor: pointer;
+        border: 2px solid #4c00c9;
+        &:hover {
+          border: 2px solid #f0f0f0;
+        }
+      }
+    }
+    &::after {
+      content: "";
+      display: block;
+      height: 2px;
+      width: 100%;
+      background-color: #f0f0f0;
+      margin-top: 1rem;
+    }
+  }
+  p {
+    margin-top: 0.5rem;
+  }
+  span {
+    font-family: "Roboto", sans-serif;
+  }
+}

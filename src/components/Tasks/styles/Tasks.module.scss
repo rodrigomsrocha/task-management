@@ -1,0 +1,63 @@
+.task_container {
+  &.DONE {
+    background-color: #a1fd98;
+    color: #673bb7;
+  }
+  &.IN_PROGRESS {
+    background-color: #fff598;
+    color: #673bb7;
+  }
+  &.OPEN {
+    background-color: #ff98c3;
+    color: #673bb7;
+  }
+  border-radius: 20px;
+  padding: 1rem;
+  width: 400px;
+  margin-bottom: 1rem;
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .accordion {
+      cursor: pointer;
+      width: 0;
+      height: 0;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-top: 5px solid #673bb7;
+      transition: 0.3s;
+      &.active {
+        transform: rotate(180deg);
+      }
+    }
+  }
+  .control {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    i {
+      color: #4c00c9;
+      margin-left: 0.5rem;
+    }
+    div {
+      border: 1px solid #673bb7;
+      cursor: pointer;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      + div {
+        margin-left: 0.5rem;
+      }
+      &.done {
+        background-color: #a1fd98;
+      }
+      &.in_progress {
+        background-color: #fff598;
+      }
+      &.open {
+        background-color: #ff98c3;
+      }
+    }
+  }
+}
