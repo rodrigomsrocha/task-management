@@ -24,3 +24,13 @@
     }
   }
 }
+
+@media (max-width: 600px) {
+  .log_in_container {
+    padding: 0 1.5rem;
+    justify-content: center;
+    width: 100vw;
+    min-height: 100vh;
+    border-radius: 0;
+  }
+}

@@ -46,3 +46,12 @@
     font-family: "Roboto", sans-serif;
   }
 }
+
+@media (max-width: 600px) {
+  .todo_container {
+    justify-content: center;
+    width: 100vw;
+    min-height: 100vh;
+    border-radius: 0;
+  }
+}
