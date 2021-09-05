@@ -5,7 +5,7 @@ import { api } from "../../services/api";
 
 import styles from "./styles/Tasks.module.scss";
 import "tippy.js/dist/tippy.css";
-import "tippy.js/themes/purple.css";
+import "../../styles/purple.scss";
 import "tippy.js/animations/perspective.css";
 import { Dispatch } from "react";
 
